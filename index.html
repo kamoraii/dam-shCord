@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Server Life Booster</title>
+<style>
+:root{
+ --bg1:#0b1020; --bg2:#221244; --panel:rgba(255,255,255,.05);
+ --line:rgba(120,170,255,.25); --text:#eef3ff; --muted:#aab8e8;
+}
+body{
+ margin:0; font-family:Arial,sans-serif; color:var(--text);
+ background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg1));
+ min-height:100vh;
+}
+header{
+ padding:22px; font-size:28px; font-weight:700;
+ border-bottom:1px solid var(--line);
+}
+.container{
+ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+ gap:20px; padding:20px;
+}
+.card{
+ background:var(--panel);
+ border:1px solid var(--line);
+ border-radius:18px;
+ padding:18px;
+ box-shadow:0 0 18px rgba(120,170,255,.08);
+}
+h2{margin:0 0 12px}
+.stat{font-size:36px;font-weight:800}
+.small{color:var(--muted);font-size:14px}
+ul{margin:8px 0 0 18px}
+li{padding:4px 0}
+button{
+ padding:12px 16px; border:none; border-radius:12px;
+ background:linear-gradient(90deg,#6ea8ff,#9b7aff);
+ color:white; font-weight:700;
+}
+</style>
+</head>
+<body>
+<header>💜 Server Life Booster</header>
+<div class="container">
+  <div class="card">
+    <h2>👥 Membres actifs</h2>
+    <div class="stat">24</div>
+    <div class="small">Cette semaine</div>
+  </div>
+  <div class="card">
+    <h2>🔥 Salon le plus vivant</h2>
+    <div class="stat"># général</div>
+    <div class="small">86 messages aujourd'hui</div>
+  </div>
+  <div class="card">
+    <h2>🎉 Idées d’animation</h2>
+    <ul>
+      <li>Question du jour</li>
+      <li>Mini défi photo</li>
+      <li>Vote de la semaine</li>
+      <li>Soirée vocale</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>📅 Prochain event</h2>
+    <div class="small">Samedi 21h — soirée quiz communauté</div>
+    <br>
+    <button>+ Ajouter une animation</button>
+  </div>
+</div>
+</body>
+</html>
